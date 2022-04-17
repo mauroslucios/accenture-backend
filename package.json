@@ -1,0 +1,37 @@
+{
+  "name": "accenture",
+  "version": "1.0.0",
+  "description": "projeto residência de software back-end em nodejs accenture",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauroslucios/accenture-backend.git"
+  },
+  "keywords": [
+    "accenture",
+    "nodejs",
+    "itau",
+    "aws",
+    "nodemon",
+    "express",
+    "handlebars",
+    "npm",
+    "postgresql",
+    "mongodb",
+    "mauroslucios"
+  ],
+  "author": "mauroslucios@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mauroslucios/accenture-backend/issues"
+  },
+  "homepage": "https://github.com/mauroslucios/accenture-backend#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
