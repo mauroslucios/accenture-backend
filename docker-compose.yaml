@@ -1,0 +1,36 @@
+version: "3.7"
+services:
+  web:
+    image: mauroslucios/accenture:v.1
+    ports:
+      - 3020:3020
+    volumes:
+      - ./:/var/www/app
+    environment:
+      NODE_ENV: development
+    depends_on:
+      - db
+    links:
+      - "db"
+
+  db:
+    image: 'mysql'
+    command: --default-authentication-plugin=mysql_native_password
+    #restart: always
+    volumes:
+      - data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+  
+  rgbd:
+    image: phpmyadmin
+    #restart: always
+    links:
+      - "db"
+    ports:
+      - 9000:80
+    environment:
+      - PMA_ARBITRARY=1
+  
+volumes:
+  data:
