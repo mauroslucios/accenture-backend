@@ -9,5 +9,5 @@
 - Dockerfile
 
 ### Comandos
-- docker build -t <name> .
+- docker build -t image-name .
 - docker-compose up
